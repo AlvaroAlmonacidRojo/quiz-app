@@ -1,30 +1,41 @@
-# React + TypeScript + Vite
+# Quiz App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+UI that shows a set of questions and lets the user select an answer for each one. Hexagonal Architecture + React + Typescript + MaterialUI.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+1. Install dependencies by running: 
+```bash
+pnpm install
+# or
+yarn install
+# or
+npm install
+# or
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Run the development server with:
+
+```bash
+pnpm dev
+# or
+yarn dev
+# or
+npm run dev
+```
+![First Question](./docs/firstQuestion.png)
+![Second Question](./docs/secondQuestion.png)
+![Summary](./docs/summary.png)
+
+
+## Tests
+```bash
+pnpm test
+# or
+yarn test
+# or
+npm run test
+```
+
+## Deployed on Vercel
+https://quiz-app-sage-eta.vercel.app/

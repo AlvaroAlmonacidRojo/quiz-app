@@ -29,7 +29,7 @@ const QuizQuestion = ({ result, onNext }: Props) => {
   };
 
   return (
-    <Box display="flex" gap={2} alignItems="center" flexDirection="column">
+    <Box display="flex" gap={2} alignItems="center" flexDirection="column" role="quiz-question">
       <Typography variant="h5" fontWeight="800" dangerouslySetInnerHTML={{ __html: question }} />
       <FormControl>
         {type === "text" && <TextField {...inputProps} />}
@@ -50,7 +50,6 @@ const QuizQuestion = ({ result, onNext }: Props) => {
         variant="contained"
         color="primary"
         disabled={value === ""}
-        style={{ width: "fit-content" }}
         onClick={onClick}
       >
         Next
