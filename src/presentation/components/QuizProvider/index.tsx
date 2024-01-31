@@ -9,7 +9,7 @@ const QuizProvider = () => {
   
   return (
     <Card>
-      {loading && <CircularProgress />}
+      {loading && <CircularProgress role="progressbar" />}
       {data && <QuizWizard questions={data.results} />}
     </Card>
   );

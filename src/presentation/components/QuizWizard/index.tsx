@@ -61,7 +61,7 @@ const QuizWizard = ({ questions }: Props) => {
   }
     
   return (
-    <Box>
+    <Box role="quiz-wizard">
       {currentStep < randomQuestions.length ? (
         <QuizQuestion
           result={randomQuestions[currentStep]}
