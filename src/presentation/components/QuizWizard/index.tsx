@@ -62,7 +62,6 @@ const QuizWizard = ({ questions }: Props) => {
     
   return (
     <Box>
-      {randomQuestions.length}
       {currentStep < randomQuestions.length ? (
         <QuizQuestion
           result={randomQuestions[currentStep]}
